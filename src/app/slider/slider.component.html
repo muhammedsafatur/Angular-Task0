@@ -1,0 +1,11 @@
+<div class="slider">
+  <div class="slides" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+    <div class="slide" *ngFor="let image of images">
+      <img [src]="image" alt="Slider Image">
+    </div>
+  </div>
+  <div class="controls">
+    <button (click)="prevSlide()">Önceki</button>
+    <button (click)="nextSlide()">Sonraki</button>
+  </div>
+</div>
